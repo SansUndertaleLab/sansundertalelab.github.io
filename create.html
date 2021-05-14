@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Create</title>
+  </head>
+  <body>
+    <h1>
+      Create subject
+    </h1>
+    <form name="subject">
+      <input type="text" name="subjectname" placeholder="Subject name">
+      <input type="button" onclick="createSubject()" value="create">
+    </form>
+    <p id="display"></p>
+    <br id="breakline">
+    <a href="index.html">return</a>
+  </body>
+</html>
+<style>
+  body{
+    background-color: lightblue;
+    text-align: center;
+  }
+  p{
+    margin: 0px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  #breakline{
+    display: none;
+  }
+</style>
+<script>
+function createSubject(){
+  var subjectname=subject.subjectname.value;
+  localStorage.setItem(subjectname,"");
+  document.getElementById("display").innerHTML="Created subject: "+subjectname;
+  document.getElementById("breakline").style.display="block";
+}
+</script>

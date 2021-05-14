@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>
+      Edit
+    </title>
+  </head>
+  <body>
+    <h1>
+        Edit
+    </h1>
+    <form name="look">
+      <input type="text" name="lookingfor" placeholder="search">
+      <input type="button" onclick="editNote()" value="search">
+      <div id="yes">
+        <br>
+        <input type="text" placeholder="text" name="edit">
+      </div>
+    </form>
+    <div id="yes2">
+      <button onclick="add()">Add</button>
+      <button onclick="remove()">Remove</button>
+    </div>
+    <p id="display"></p>
+    <a href="index.html">return<a>
+  </body>
+</html>
+<style>
+  div{
+    display: none;
+  }
+  body{
+    text-align: center;
+    background-color: lightblue;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+</style>
+<script>
+function editNote(){
+  try{
+    localStorage.getItem(look.lookingfor.value).split("e");
+    document.getElementById("yes").style.display="block";
+    document.getElementById("yes2").style.display="block";
+  }catch{
+    document.getElementById("display").innerHTML="something went wrong";
+    document.getElementById("yes").style.display="none";
+    document.getElementById("yes2").style.display="none";
+
+  }
+}
+function add(){
+  try{
+    var loaded=localStorage.getItem(look.lookingfor.value).split("<br>");
+    var loadClean=localStorage.getItem(look.lookingfor.value).split("<br>");
+    loaded="<br>"+look.edit.value;
+    newMsg=look.edit.value;
+    localStorage.setItem(look.lookingfor.value,loadClean.join("<br>")+loaded);
+    console.log(look.lookingfor.value)
+    document.getElementById("display").innerHTML="added successfully";
+  }catch{
+    document.getElementById("display").innerHTML="something went wrong";
+
+  }
+}
+function remove(){
+  var loaded=localStorage.getItem(look.lookingfor.value).split("<br>"+look.edit.value);
+  localStorage.setItem(look.lookingfor.value,loaded.join(""));
+  document.getElementById("display").innerHTML="removed successfully";
+}
+</script>
