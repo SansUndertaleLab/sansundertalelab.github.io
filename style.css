@@ -4,3 +4,13 @@ body{
 button{
   background-color: red;
 }
+a{
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 2px;
+}
+a:hover{
+  background-color: lightgray;
+  text-decoration: none;
+}
