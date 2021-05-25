@@ -1,0 +1,25 @@
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>
+    pp
+  </h1>
+  <br>
+  <h6>
+    aka painful programming
+  </h6>
+  <br>
+  <form name="compiler">
+    <textarea name="codeBox" rows="22" cols="140"></textarea>
+  </form>
+  <form name="stdin" id="inputting">
+    <input type="text" name="input" placeholder="Input"></input>
+    <input type="button" onClick="send()" value="send"></input>
+  </form>
+  <textarea cols="140" rows="22" readonly="" id="stdout"></textarea>
+  <button onClick="compile()">
+    Run
+  </button>
+</body>
