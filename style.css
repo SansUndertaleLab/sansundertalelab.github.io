@@ -1,0 +1,59 @@
+br {
+    user-select: none;
+  }
+  
+  body {
+    text-align: center;
+    background-color: cyan;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .circle.animated {
+    animation-name: spin;
+    animation-duration: 1000ms;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .circle:hover {
+    background-color: lightgrey;
+  }
+  
+  .circle:active {
+    background-color: grey;
+  }
+  
+  .circle {
+    background-color: white;
+    display: table;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    user-select: none;
+    border: 5px solid green;
+    border-radius: 50%;
+    margin-left: 50%;
+    overflow: hidden;
+  }
+  
+  .cText {
+    display: table-cell;
+    position: absolute;
+    top: 35%;
+    vertical-align: middle;
+  }
+  
+  .center {
+    position: relative;
+    top: -50%;
+  }
