@@ -58,12 +58,13 @@ function main() {
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    selected = links[Math.trunc(Math.random() * links.length + 1)];
+                    selected = links[Math.trunc(Math.random() * (links.length))];
                     rating = selected[1];
                     message = selected[2];
                     document.getElementById("rating").textContent = rating;
                     document.getElementById("msg").textContent = message;
-                    return [4 /*yield*/, wait(1500)];
+                    document.getElementsByClassName("center")[0].classList.add("visible");
+                    return [4 /*yield*/, wait(2000)];
                 case 1:
                     _a.sent();
                     location.replace(selected[0]);
