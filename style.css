@@ -19,4 +19,11 @@ body{
 }
 .center{
     text-align: center;
+    opacity: 0%;
+    transition: all 0.5s;
+    transform: translateY(20px);
+}
+.center.visible{
+    opacity: 100%;
+    transform: translateY(0px);
 }
