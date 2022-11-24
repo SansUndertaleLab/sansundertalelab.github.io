@@ -1,0 +1,22 @@
+.navbar{
+    background-color: rgb(24,25,28);
+}
+body{
+    margin: 0px;
+    background-color: rgb(54,57,63);
+}
+.text{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    transform: translateY(60px);
+    display: grid;
+    place-items: center;
+    color:red;
+}
+.center{
+    text-align: center;
+}
