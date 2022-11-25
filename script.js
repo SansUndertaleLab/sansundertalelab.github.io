@@ -43,7 +43,8 @@ var links = [["https://www.omfgdogs.com/#", "9/10", "Cool website!"],
     ["https://www.thiscatdoesnotexist.com", "cat/10", "cat"],
     ["http://www.spaceis.cool", "7/10", "space, space space, spaaaaaaaaaaaaaaaaaace"],
     ["https://www.thispersondoesnotexist.com", "7/10", "human"],
-    ["https://www.youtube.com/watch?v=dg4dmNvxdu0","MaoMaoMaoMao/10","Mao"]];
+    ["https://www.youtube.com/watch?v=dg4dmNvxdu0","MaoMaoMaoMao/10","Mao"],
+    ["https://www.chess.com/member/corvoattano69","0/10","Loser"]];
 function wait(ms) {
     return __awaiter(this, void 0, Promise, function () {
         return __generator(this, function (_a) {
